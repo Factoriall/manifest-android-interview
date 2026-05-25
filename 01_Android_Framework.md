@@ -10,21 +10,25 @@
   - 안드로이드는 Google이 개발·유지하는 리눅스 커널 기반의 오픈소스 모바일 OS로, 스마트폰·태블릿 등 다양한 하드웨어를 지원하는 유연한 플랫폼입니다.
   - Framework API 요청이 ART·HAL·Linux Kernel을 거쳐 앱 실행과 하드웨어 접근이 이뤄지는 계층형 OS입니다.
 - **Deep Dive & 키워드 메모:**
-  - **Key Features:** 
-    1. 오픈소스
-    2. SDK를 이용핸 앱 개발 
-    3. Google Play 등의 풍부한 환경 제공
-    4. 멀티태스킹·GC
-    5. 다양한 하드웨어 지원
-  - **Architecture(책 순):** 
-    Linux Kernel(메모리·프로세스·보안·드라이버) 
-    ➡️ HAL(표준 인터페이스·동적 로드) 
-    ➡️ ART(AOT·JIT)·Core Libraries 
-    ➡️ Native(OpenGL·SQLite·WebKit) 
-    ➡️ Framework(ActivityManager, NotificationManager, Content Providers) 
-    ➡️ Applications
-  - **Practical Question: *How do Linux Kernel, ART, and HAL work together for application execution and hardware interaction?*:**
-  Framework가 하드웨어 접근을 요청하면 ➡️ ART가 앱 실행 ➡️ HAL이 표준 인터페이스로 장치에 맞춤(필요 시 모듈 동적 로드) ➡️ Linux Kernel이 드라이버로 실제 하드웨어 제어
+  - **Key Features:**
+    - 오픈소스
+    - SDK를 이용한 앱 개발
+    - Google Play 등의 풍부한 환경 제공
+    - 멀티태스킹·GC
+    - 다양한 하드웨어 지원
+  - **Architecture(책 순):**
+    - Linux Kernel — 메모리·프로세스·보안·드라이버
+    - ➡️ HAL — 표준 인터페이스·동적 로드
+    - ➡️ ART(AOT·JIT) & Core Libraries
+    - ➡️ Native — OpenGL·SQLite·WebKit
+    - ➡️ Framework — ActivityManager, NotificationManager, Content Providers
+    - ➡️ Applications
+  - **Practical Question**
+    - *How do Linux Kernel, ART, and HAL work together for application execution and hardware interaction?*
+    - Framework가 하드웨어 접근을 요청
+    - ➡️ ART가 앱 실행
+    - ➡️ HAL이 표준 인터페이스로 장치에 맞춤(필요 시 모듈 동적 로드)
+    - ➡️ Linux Kernel이 드라이버로 실제 하드웨어 제어
 
 ---
 
