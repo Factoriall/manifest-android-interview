@@ -16,13 +16,13 @@
     - Google Play 등의 풍부한 환경 제공
     - 멀티태스킹·GC
     - 다양한 하드웨어 지원
-  - **Architecture(책 순):**
+  - **Architecture:**
     - Linux Kernel — 메모리·프로세스·보안·드라이버
-    - ➡️ HAL — 표준 인터페이스·동적 로드
-    - ➡️ ART(AOT·JIT) & Core Libraries
-    - ➡️ Native — OpenGL·SQLite·WebKit
-    - ➡️ Framework — ActivityManager, NotificationManager, Content Providers
-    - ➡️ Applications
+    - HAL — 표준 인터페이스·동적 로드
+    - ART(AOT·JIT) & Core Libraries
+    - Native — OpenGL·SQLite·WebKit
+    - Framework — ActivityManager, NotificationManager, Content Providers
+    - Applications
   - **Practical Question**
     - *How do Linux Kernel, ART, and HAL work together for application execution and hardware interaction?*
     - Framework가 하드웨어 접근을 요청
