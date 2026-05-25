@@ -23,12 +23,8 @@
     - Native — OpenGL·SQLite·WebKit
     - Framework — ActivityManager, NotificationManager, Content Providers
     - Applications
-  - **Practical Question**
-    - *How do Linux Kernel, ART, and HAL work together for application execution and hardware interaction?*
-    - Framework가 하드웨어 접근을 요청
-    - ➡️ ART가 앱 실행
-    - ➡️ HAL이 표준 인터페이스로 장치에 맞춤(필요 시 모듈 동적 로드)
-    - ➡️ Linux Kernel이 드라이버로 실제 하드웨어 제어
+  - **Practical Question**: *How do Linux Kernel, ART, and HAL work together for application execution and hardware interaction?*
+    - Framework가 하드웨어 접근을 요청 ➡️ ART가 앱 실행 ➡️ HAL이 표준 인터페이스로 장치에 맞춤(필요 시 모듈 동적 로드) ➡️ Linux Kernel이 드라이버로 실제 하드웨어 제어
 
 ---
 
